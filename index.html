@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>IuTubiOke!</title>
+    <link rel="stylesheet" type="text/css" href="ito.css">
+  </head>
+  <body>
+      <h1 id="site-title">
+          <img src="gifs/trip.gif" style="position: absolute;" height="60px"/>
+          <span>IuTubiOke!</span>
+          <img src="gifs/banana.gif" height="45px"/>
+          <img src="gifs/lisa.gif" height="45px"/>
+          <img src="gifs/pickle.gif" height="45px"/>
+          <img src="gifs/skeleton.gif" height="45px"/>
+          <img src="gifs/luigi.gif" height="45px"/>
+          <img src="gifs/travolta.gif" height="45px"/>
+          <img src="gifs/miniom.gif" height="45px"/>
+          <img src="gifs/babyglitch.gif" height="45px"/>
+          <img src="gifs/peanuts.gif" height="45px"/>
+          <img src="gifs/duck.gif" height="45px"/>
+          <img src="gifs/doggo.gif" height="45px"/>
+          <img src="gifs/carlton.gif" height="45px"/>
+          <img src="gifs/kombat.gif" height="45px"/>
+          <img src="gifs/rainbownana.gif" height="45px"/>
+          <img src="gifs/carreta.gif" height="45px"/>
+      </h1>
+    <h3 id="subtitle">Search for song title and/or artist name, click on one of the videos to add to the karaoke playlist! \o/</h3>
+    <img id="discoball" src="gifs/discoball.gif" height="150px" />
+    <img id="jake" src="gifs/jake.gif" height="200px" />
+    <div id="buttons" >
+      <label> 
+          <input id="singer-name" placeholder='your-nickname' type="text"/>
+          <input id="query" placeholder='song-and/or-artist' type="text"/>
+          <button id="search-button" disabled onclick="search()">Search</button>
+      </label>
+	  <button id="clear-playlist-button" onclick="clearPlaylist()" style="float: right; margin-left: 20px;">Clear Playlist</button>
+	  <button id="reload-video-button" onclick="reloadVideo()" style="float: right; margin-left: 20px;">Reload Current</button>
+	  <button id="skip-button" disabled onclick="skip()" style="float: right;">Skip</button>
+    </div>
+    <div id="search-container">
+    </div>
+    <div id="playlist-container">
+		<div id="playlist">
+		</div>
+    </div>
+    <!--div class="footer">
+        bgo.la/iutubioke
+    </div-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="auth.js"></script>
+    <script src="search.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script type="text/javascript">
+      updateList();
+    </script>
+  </body>
+</html>

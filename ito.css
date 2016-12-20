@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: #ff00fc;
+    font-family: 'Aldrich', sans-serif;
+    margin: 5px;
+    padding-bottom: 6rem;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: inherit;
+}
+#site-title {
+    font-size: 48px;
+    animation: blinker 500ms linear infinite;
+    margin-bottom: 5px;
+}
+#site-title span {
+    margin-left: 70px;
+}
+#subtitle {
+    background-color: black;
+    color: #ff00fc;
+    padding-top: 5px;
+    margin: none;
+    padding-left: 10px;
+	border-radius: 20px;
+    animation: colorize 500ms linear infinite alternate;
+}
+@keyframes colorize {
+    from { color: #ff00fc; }
+    to { color: greenyellow;}
+}
+@keyframes blinker {
+   50% { opacity: 0.4; }
+}
+.video-snippet {
+    float: left;
+    position: relative;
+}
+
+.video-snippet img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px;
+}
+
+.video-snippet span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 290px;
+}
+
+#playlist-container {
+    float: right;
+    background: #000;
+    color: #ff00fc;
+    width: 50%;
+	border-radius: 20px;
+}
+
+#search-container {
+    float: left;
+    width: 50%;
+}
+#buttons {
+    margin-bottom: 15px;
+}
+ul {
+    list-style-type: none;
+}
+#discoball {
+    position: absolute;
+    top: 98px;
+    left: 477px;
+    height: 150px;
+    width: 130px;
+}
+#jake {
+position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 200px;
+    width: 365px;
+    animation: jake-move 4s infinite alternate;
+}
+
+@keyframes jake-move {
+  from {left: 5%;}
+  to {left: 70%;}
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  background-color: #000;
+  text-align: center;
+  animation: colorize 4s infinite alternate;
+}
